@@ -2,6 +2,7 @@ import requests
 import os
 TOKEN = os.getenv("TOKEN")
 import time
+import json
 
 url = f"https://api.telegram.org/bot{TOKEN}/getUpdates"
 
@@ -34,5 +35,5 @@ while True:
     idx = last_update_id
     time.sleep(0.5)
 
-    
+
 
